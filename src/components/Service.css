@@ -1,0 +1,101 @@
+/* SERVICES SECTION */
+#services {
+  padding: 90px 10%;
+  background-color: #001b29;
+  color: #fff;
+}
+
+.sub-title {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sub-title span {
+  color: #0ef;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.services-list div {
+  background: transparent;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 238, 255, 0.2);
+  border: 1px solid rgba(0, 238, 255, 0.3);
+  transition: all 0.4s ease;
+}
+
+.services-list div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #0ef, 0 0 40px #0ef1;
+}
+
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 25px;
+  color: #0ef;
+}
+
+.services-list div h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.services-list div p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+.services-list div a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+}
+
+/* Read more button */
+.read {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #0ef;
+  border-radius: 40px;
+  color: #081b29;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 0 10px #0ef, 0 0 40px #0ef;
+  transition: 0.3s ease;
+  opacity: 0;
+  animation: slidetop 1s ease forwards;
+  animation-delay: 2s;
+}
+
+.read:hover {
+  box-shadow: 0 0 10px cyan, 0 0 25px cyan,
+              0 0 50px cyan, 0 0 100px cyan;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #services {
+    padding: 60px 5%;
+  }
+
+  .sub-title {
+    font-size: 40px;
+  }
+
+  .services-list div {
+    padding: 30px 20px;
+  }
+}
