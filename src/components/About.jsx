@@ -12,7 +12,11 @@ const About = () => {
         <p>
          I am a passionate second-year computer science student with expertise in HTML, CSS, JavaScript, React.js, and Python, specializing in building sleek, responsive web applications with dynamic user experiences. From developing a Netflix clone to creating real-time weather apps and interactive to-do lists, my projects showcase my ability to write clean, efficient code and work with APIs. Proficient in Git and UI/UX principles, I am always eager to learn and explore new technologies. Aspiring to be a full-stack developer, I seek opportunities to collaborate, innovate, and contribute to impactful projects. Let's connect and build something amazing!
         </p>
-        <a href="#" className="btn-box">More About Me</a>
+     <button className="btn-box" onClick={() => alert("More About Me clicked!")}>
+  More About Me
+</button>
+
+
       </div>
     </section>
   );

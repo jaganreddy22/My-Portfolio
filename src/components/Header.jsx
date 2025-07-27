@@ -5,10 +5,13 @@ const Header = () => {
 
   return (
     <header className="header">
-      <p href="#" className="logo"><span>De</span>veloper</p>
+      {/* Fixed logo: no href on <p> */}
+      <span className="logo"><span>De</span>veloper</span>
+
       <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
         <i className="bx bx-menu"></i>
       </div>
+
       <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
         <a href="#home" style={{ '--i': 1 }}>Home</a>
         <a href="#about" style={{ '--i': 2 }}>About</a>
